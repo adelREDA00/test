@@ -32,7 +32,7 @@ const User = () => {
 
   useEffect(()=>{
     async function getData(){
-      const res = await fetch(`http://127.0.0.1:8000/${user.id}`)
+      const res = await fetch(`https://reacthpp.herokuapp.com/${user.id}`)
       const test  = await res.json()
       setData(test)
     }
@@ -43,7 +43,7 @@ const User = () => {
     e.preventDefault();
     try{
 
-      let res = await fetch(`http://127.0.0.1:8000/${user.id}`, {
+      let res = await fetch(`https://reacthpp.herokuapp.com/${user.id}`, {
         method: 'PUT',
         headers: {
           'Accept': 'application/json, text/plain, */*',

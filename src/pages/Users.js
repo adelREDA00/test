@@ -10,14 +10,14 @@ const Users = ({pat}) => {
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
-      fetch(`http://127.0.0.1:8000/${id}`, {
+      fetch(`https://reacthpp.herokuapp.com/${id}`, {
         method: 'DELETE',
       })
   };
   
   useEffect(()=>{
     async function getData(){
-      const res = await fetch(' http://127.0.0.1:8000/js')
+      const res = await fetch('https://reacthpp.herokuapp.com/js')
       const test  = await res.json()
       setData(test)
     }

@@ -25,7 +25,7 @@ const NewUser = () => {
   const handlSubmit =  async (e)=>{
     e.preventDefault();
     try{
-     let res = await fetch("http://127.0.0.1:8000/pass", {
+     let res = await fetch("https://reacthpp.herokuapp.com/pass", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
