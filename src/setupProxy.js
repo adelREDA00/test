@@ -6,7 +6,6 @@ module.exports = function(app) {
   app.use(
     proxy("/js", {
       target: "https://adell.pythonanywhere.com",
-      secure: false,
       changeOrigin: true
     })
   );
@@ -14,14 +13,12 @@ module.exports = function(app) {
   app.use(
     proxy(`/${user.id}`, {
       target: "https://adell.pythonanywhere.com",
-      secure: false,
       changeOrigin: true
     })
   );
   app.use(
     proxy("/pass", {
       target: "https://adell.pythonanywhere.com",
-      secure: false,
       changeOrigin: true
     })
   );
