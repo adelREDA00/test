@@ -26,13 +26,11 @@ const Featuredinfo = () => {
     <div className="featuredItem">
       <span className="featuredTitle">Cost</span>
       <div className="featuredMoneyContainer">
-        <span className="featuredMoney">$2,225</span>
-        <span className="featuredMoneyRate">
-          +2.4 <ArrowDownwardIcon className="featuredIcon"/>
-        </span>
+        <mark>Malheureusement, nous avons actuellement des problèmes avec le backend de l'application en raison d'un changement de la politique d'hébergement de Heroku pour les plans gratuits. Nous sommes désolés pour les désagréments que cela peut causer à nos utilisateurs. Nous travaillons actuellement à résoudre le problème et à remettre le backend en ligne le plus rapidement possible.</mark>
       </div>
-      <span className="featuredSub">Compared to last month</span>
+      
     </div>
+
   </div>
   )
 }

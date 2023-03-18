@@ -10,14 +10,14 @@ const Users = ({pat}) => {
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
-      fetch(`https://reacthpp.herokuapp.com/${id}`, {
+      fetch(`https://adell.pythonanywhere.com/${id}`, {
         method: 'DELETE',
-      })
+      },)
   };
   
   useEffect(()=>{
     async function getData(){
-      const res = await fetch('https://reacthpp.herokuapp.com/js')
+      const res = await fetch('https://adell.pythonanywhere.com/js')
       const test  = await res.json()
       setData(test)
     }

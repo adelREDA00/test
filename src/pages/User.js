@@ -32,7 +32,7 @@ const User = () => {
 
   useEffect(()=>{
     async function getData(){
-      const res = await fetch(`https://reacthpp.herokuapp.com/${user.id}`)
+      const res = await fetch(`https://adell.pythonanywhere.com/${user.id}`)
       const test  = await res.json()
       setData(test)
     }
@@ -43,7 +43,7 @@ const User = () => {
     e.preventDefault();
     try{
 
-      let res = await fetch(`https://reacthpp.herokuapp.com/${user.id}`, {
+      let res = await fetch(`https://adell.pythonanywhere.com/${user.id}`, {
         method: 'PUT',
         headers: {
           'Accept': 'application/json, text/plain, */*',
