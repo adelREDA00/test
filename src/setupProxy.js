@@ -5,20 +5,23 @@ const user = useSelector((state) => state.user.value);
 module.exports = function(app) {
   app.use(
     proxy("/js", {
-      target: "http://adell.pythonanywhere.com",
+      target: "adell.pythonanywhere.com",
+      secure: false,
       changeOrigin: true
     })
   );
 
   app.use(
     proxy(`/${user.id}`, {
-      target: "http://adell.pythonanywhere.com",
+      target: "adell.pythonanywhere.com",
+      secure: false,
       changeOrigin: true
     })
   );
   app.use(
     proxy("/pass", {
-      target: "http://adell.pythonanywhere.com",
+      target: "adell.pythonanywhere.com",
+      secure: false,
       changeOrigin: true
     })
   );
