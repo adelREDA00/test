@@ -19,6 +19,7 @@ const Users = ({pat}) => {
     async function getData(){
       const res = await fetch('/js')
       const test  = await res.json()
+      console.log(test)
       setData(test)
     }
     getData()
