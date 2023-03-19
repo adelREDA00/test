@@ -25,7 +25,7 @@ const NewUser = () => {
   const handlSubmit =  async (e)=>{
     e.preventDefault();
     try{
-     let res = await fetch("/pass", {
+     let res = await fetch("http://adell.pythonanywhere.com/pass", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {

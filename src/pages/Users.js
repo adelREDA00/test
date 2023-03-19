@@ -10,14 +10,14 @@ const Users = ({pat}) => {
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
-      fetch(`/${id}`, {
+      fetch(`http://adell.pythonanywhere.com/${id}`, {
         method: 'DELETE',
       },)
   };
   
   useEffect(()=>{
     async function getData(){
-      const res = await fetch('/js')
+      const res = await fetch('http://adell.pythonanywhere.com/js')
       const test  = await res.json()
       console.log(test)
       setData(test)
