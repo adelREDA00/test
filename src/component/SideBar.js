@@ -33,7 +33,7 @@ function SideBar() {
           <Link className='link' to="/data">
           <li onClick={active} className="sidebarListItem">
           <DashboardIcon />
-             <span>Data</span>
+             <span>Users</span>
           </li>
           </Link>
           <Link className='link' to="/newuser">
@@ -51,22 +51,22 @@ function SideBar() {
          
             <li onClick={active} className="sidebarListItem">
              
-              Users
+            
+            Doctors
             </li>
        
           
             <li onClick={active} className="sidebarListItem">
-              
-              Products
+            messages
             </li>
          
           <li onClick={active} className="sidebarListItem">
           
-            Transactions
+          schedule
           </li>
           <li onClick={active} className="sidebarListItem">
           
-            Reports
+          rendez vous
           </li>
         </ul>
       </div>

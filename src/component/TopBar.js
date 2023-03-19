@@ -15,7 +15,7 @@ const TopBar = ({childToParent}) => {
     <div className="topbar">
     <div className="topbarWrapper">
       <div className="topLeft">
-        <span className="logo">HPP<small>DATABASE</small></span>
+        <span className="logo">react <small> DATABASE</small></span>
         <div className="wrap">
    <div className="search">
       <input type="text" onChange={search} className="searchTerm" placeholder="What are you looking for?"/>
